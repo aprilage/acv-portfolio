@@ -1,7 +1,4 @@
 
-#projects-main h2 {
-	display: none;
-}
 
 #projects-container {
 	display: flex;
@@ -24,16 +21,6 @@
 .project-image img {
 	width: 100%;
 }
-
-
-
-
-@media (min-width: 600px) {
-	#projects-container {
-		gap: 2rem;
-	}
-	.project-item {
-		
-		flex-basis: 24rem;
-	}
+code {
+	color: slategray;
 }

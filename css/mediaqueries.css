@@ -1,0 +1,26 @@
+
+@media (min-width: 768px) {
+	body {
+	 width: 80%;
+	}
+    h3 {
+        font-size: 2rem;
+    }
+    #projects-container {
+		gap: 2rem;
+	}
+	.project-item {
+		
+		flex-basis: 24rem;
+	}
+    #profile {
+        margin-bottom: 4rem;
+    }
+	#profile-image {
+		width: 20rem;
+        margin-right: 1.5rem;
+	}
+	section>p {
+		font-size: 1.5rem;
+	}
+}
