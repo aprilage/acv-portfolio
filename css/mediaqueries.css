@@ -10,14 +10,13 @@
 		gap: 2rem;
 	}
 	.project-item {
-		
 		flex-basis: 24rem;
 	}
     #profile {
         margin-bottom: 4rem;
     }
 	#profile-image {
-		width: 20rem;
+		width: 15rem;
         margin-right: 1.5rem;
 	}
 	section>p {
