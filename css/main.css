@@ -39,7 +39,7 @@ main {
 /* Typography defaults =========================== */
 h3 {
 	font-size: 1.2rem;
-	font-weight: 300;
+	font-weight: 400;
 	margin: .5rem 0;
 }
 
@@ -55,8 +55,8 @@ p {
 
 
 a {
-	color: #888;
-	font-weight: 300;
+	color: #555;
+	font-weight: 400;
 }
 
 a:hover {
