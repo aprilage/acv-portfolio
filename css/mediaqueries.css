@@ -14,12 +14,28 @@
 	}
     #profile {
         margin-bottom: 4rem;
+		flex-direction: row;
+		justify-content: space-between;
+		
     }
+
 	#profile-image {
-		width: 15rem;
+		min-width: 15rem;
         margin-right: 1.5rem;
 	}
 	section>p {
 		font-size: 1.5rem;
+	}
+	#contact {
+		height: 50rem;
+	}
+	#to-top button {
+		padding: 1rem;
+		background-color: aquamarine;
+		border-radius: 100%;
+		margin: 2rem;
+		position: fixed;
+		right: 2rem;;
+		bottom: 7rem;
 	}
 }

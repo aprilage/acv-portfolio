@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/mediaqueries.css" />
     <link
       rel="stylesheet"
@@ -15,26 +16,126 @@
     <header>
       <nav>
         <div id="brand">
-          <h1><a href=""></a>APRIL</h1>
+          <h1><a href="#profile"></a>APRIL</h1>
         </div>
         <div id="page-nav">
-          <a class="selected" href="/index.html">About</a>
-          <a href="/projects.html">Projects</a>
+          <a href="/#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
     <main>
-      <h2>About</h2>
       <section id="profile">
+        <h2>About</h2>
         <div id="profile-image">
           <img
             src="images/profile-photo.jpeg"
             alt="April vanderslice from the shoulders up"
           />
         </div>
-        <div id="contact">
+        <p>
+          Web developer based in Plano, Texas. I have experience in backend
+          technologies and design, but my specialty is in front end languages such as HTML, CSS, and JavaScript.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container">
+        <article class="project-item">
+        <div class="project-image">
+          <img
+            src="images/totalist_v2.png"
+            alt="list view of totalist"
+          />
+          </div>
+          <div>
+            <h4 class="project-title">Totalist v2</h4>
+            <p class="project-text">
+              In this second version of List Total (now known as Totalist), I learned how to build my own API, create the database, run the migrations, seed the data, and use JSON Web Tokens for login validation.
+            </p>
+            <a href="https://github.com/aprilvanderslice/Totalist">view code</a>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="project-image">
+          <img
+            src="images/quizzes.png"
+            alt="quizzes login page"
+          />
+          </div>
+          <div>
+            <h4 class="project-title">Quizzes</h4>
+            <p class="project-text">
+              A website to take quizzes using GitHub authentication to login. Also features server side rendering using Twig templates attached to React for the front end. The focus was building the back end and github authentication, so not much styling going on here. 
+            </p>
+            <a href="https://github.com/aprilvanderslice/quizzes">view code</a>
+          </div>
+        </article>
+        <article class="project-item">
+        <div class="project-image">
+          <img
+            src="images/home-library.png"
+            alt="landing page of home library"
+          />
+          </div>
+          <div>
+            <h4 class="project-title">Home Library</h4>
+            <p class="project-text">
+              Home Library is a way to catalog your books. The search page is connected to the Open Library API. The useContext and useReducer React Hooks are used to manipulate and display the user's book list.</p>
+            <a href="https://github.com/aprilvanderslice/home-library">view code</a>
+          </div>
+        </article>
+        <article class="project-item">
+        <div class="project-image">
+          <img
+            src="images/dashboard.png"
+            alt="chart view of the dashboard"
+          />
+          </div>
+          <div>
+            <h4 class="project-title">User Dashboard</h4>
+            <p class="project-text">
+              This is a simple React app using React Router featuring a user dashboard. Here I played around with using Recharts to add graphics to the page. This project also includes an API call to randomuser.me and displays user data under the Settings tab of the site. 
+            </p>
+            <a href="https://github.com/aprilvanderslice/dashboard">view code</a>
+          </div>
+        </article>
+        <article class="project-item">
+        <div class="project-image">
+          <img
+            src="images/listtotal.jpeg"
+            alt="main page of Totalist v1"
+          />
+          </div>
+          <div>
+            <h4 class="project-title">Totalist v1</h4>
+            <p class="project-text">
+              The first version of an idea I had for an app that totals everything on your shopping list as you add items. It's built using HTML, Bootstrap, and Javascript. This was my first experience with the benefits and limitations of Bootstrap.
+            </p>
+            <a href="https://github.com/aprilvanderslice/Totalist_v1">view code</a>
+          </div>
+        </article>
+        <article class="project-item">
+        <div class="project-image">
+          <img
+            src="images/babyland-page.png"
+            alt="static view of website homepage"
+          />
+          </div>
+          <div class="project-info">
+            <h4 class="project-title">Babyland Recreation</h4>
+            <p class="project-text">
+              Using HTML and CSS I recreated <a href="https://www.templatemonster.com/website-templates/52818.html">this website template</a>. The focus of this project was to learn how floats work by using them exclusively to build the layout. The secondary focus was to learn how to use pseudo-classes (like <code>:nth-of-type</code>) to select elements in the stylesheet instead of adding clases and id's to every element (which can get messy and isn't necessary anyway).
+            </p>
+            <a href="https://github.com/aprilvanderslice/babyland">view code</a>
+          </div>
+        </article>
+        <div>
+    </section>
+    <section id="contact">
+      <h2>contact</h2>
+      <div>
           <address>
-            <h3>April Vanderslice</h3>
             <a href="tel:+18014731747">(801) 473-1747</a><br />
             <a href="mailto:aprilvanderslice@gmail.com">
               aprilvanderslice@gmail.com
@@ -57,14 +158,16 @@
               ></a>
             </li>
           </ul>
-        </div>
+          </div>
       </section>
-      <section>
-        <p>
-          Web developer based in Plano, Texas. I have experience in backend
-          technologies and design, but my specialty is in front end languages such as HTML, CSS, and JavaScript.
-        </p>
-      </section>
+      <div id="to-top">
+      <button>
+        <a href="#top"><i class="bi bi-arrow-up"></i> top</a>
+      </button>
+      </div>
     </main>
+    <footer>
+      <small>april vanderslice</small>
+    </footer>
   </body>
 </html>

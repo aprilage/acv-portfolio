@@ -26,17 +26,17 @@ body {
 	margin: 0 auto;
 }
 
-main h2 {
-	display: none;
-}
-
-main {
-	height: 100vh;
-}
-
-
 
 /* Typography defaults =========================== */
+h2 {
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 700;
+	padding: 1.5rem 0;
+	margin: 5rem 0 2rem 0;
+	border-bottom: 2px solid black;
+}
+
 h3 {
 	font-size: 1.2rem;
 	font-weight: 400;
@@ -67,6 +67,9 @@ a:hover {
 /* Header/Footer =========================== */
 header {
 	margin: 2rem 0 3rem 0;
+	position: sticky;
+	top: 0;
+	background-color: white;
 }
 
 nav {
@@ -90,10 +93,6 @@ nav {
 	margin-right: 2rem;
 }
 
-footer {
-	flex-shrink: 0;
-	text-align: center;
-}
 
 #brand {
 	width: 6rem;
@@ -104,23 +103,66 @@ footer {
 	font-size: 2rem;
 }
 
-/* Profile/Contact =========================== */
+/* Profile =========================== */
 
 #profile {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	margin-bottom: 3rem;
 }
 
+#profile h2 {
+	display: none;
+}
 
 #profile-image {
 	width: 12rem;
-	margin: 0 1rem 0 0;
+	margin: 0 1rem 2rem 0;
 }
 
 #profile-image img {
 	width: 100%;
 	border-radius: 100%;
+}
+
+
+/* Projects =========================== */
+#projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 1rem;
+	justify-content: center;
+}
+
+.project-item {
+	background-color: #f8f8f8;
+	display: flex; /* to give project items access to flex properties */
+	flex-direction: column;
+	padding: 1rem;
+}
+.project-image {
+	height: 13rem;
+	overflow: hidden;
+}
+
+.project-image img {
+	width: 100%;
+}
+code {
+	color: slategray;
+}
+
+/* Contact =========================== */
+
+#contact {
+	height: 30rem;
+	border: 1px solid red;
+}
+
+#contact div {
+	margin: 2rem 0;
+	
 }
 
 #contact ul {
@@ -135,4 +177,22 @@ footer {
 }
 
 
+#to-top button {
+	padding: 1rem;
+	margin: 2rem;
+	position: sticky;
+	align-content: center;
+}
 
+#to-top a {
+	font-weight: 800;
+	text-transform: capitalize;
+}
+
+footer {
+	background-color: #000;
+	height: 5rem;
+}
+footer small {
+	color: white;
+}
