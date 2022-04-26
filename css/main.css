@@ -30,7 +30,7 @@ body {
 /* Typography defaults =========================== */
 h2 {
 	text-transform: uppercase;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 700;
 	padding: 1.5rem 0;
 	margin: 5rem 0 2rem 0;
@@ -38,16 +38,14 @@ h2 {
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-weight: 400;
-	margin: .5rem 0;
+	margin-bottom: .5rem;
 }
 
 h4 {
-	font-weight: 400;
-	margin: 1rem 0;
+	margin: .5rem 0;
 }
-
 p {
 	font-weight: 200;
 	margin-bottom: 1rem;
@@ -55,8 +53,9 @@ p {
 
 
 a {
-	color: #555;
+	color: #333;
 	font-weight: 400;
+	border-bottom: 1px solid;
 }
 
 a:hover {
@@ -102,10 +101,28 @@ nav {
 	font-weight: 700;
 	font-size: 2rem;
 	color: #222;
+	border-bottom: none;
+}
+
+/* Edu and Skills =========================== */
+#school h4, #school p {
+	margin-bottom: 0;
+}
+
+.skills-subsection {
+	margin-bottom: 2rem;
+}
+
+.skills-subsection ul {
+	display: flex;
+	margin-bottom: 1.2rem;
+}
+.skills-subsection li {
+	padding: .5rem;
+	font-weight: 200;
 }
 
 /* Profile =========================== */
-
 #profile {
 	display: flex;
 	flex-direction: column;
@@ -164,7 +181,10 @@ code {
 
 #contact div {
 	margin: 2rem 0;
-	
+}
+
+#contact a {
+	border-bottom: none;
 }
 
 #contact ul {
@@ -178,20 +198,9 @@ code {
 	padding: .5rem .5rem .5rem 0;
 }
 
-
-#to-top button {
-	padding: 1rem;
-	margin: 2rem;
-	position: sticky;
-	align-content: center;
-}
-
-#to-top a {
-	font-weight: 800;
-	text-transform: capitalize;
-}
-
 footer {
-	height: 3rem;
+	height: 2rem;
 	text-align: center;
+	font-size: .75rem;
+	color: #777;
 }
