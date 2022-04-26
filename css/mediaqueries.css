@@ -26,16 +26,15 @@
 	section>p {
 		font-size: 1.5rem;
 	}
-	#contact {
-		height: 50rem;
-	}
 	#to-top button {
 		padding: 1rem;
-		background-color: aquamarine;
-		border-radius: 100%;
 		margin: 2rem;
-		position: fixed;
-		right: 2rem;;
-		bottom: 7rem;
+		position: sticky;
+		align-content: center;
+	}
+	
+	#to-top a {
+		font-weight: 800;
+		text-transform: capitalize;
 	}
 }

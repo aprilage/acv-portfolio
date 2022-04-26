@@ -98,9 +98,10 @@ nav {
 	width: 6rem;
 }
   
-#brand h1 {
+#brand a {
 	font-weight: 700;
 	font-size: 2rem;
+	color: #222;
 }
 
 /* Profile =========================== */
@@ -110,6 +111,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 3rem;
+	height: 23rem;
 }
 
 #profile h2 {
@@ -128,6 +130,7 @@ nav {
 
 
 /* Projects =========================== */
+
 #projects-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -157,7 +160,6 @@ code {
 
 #contact {
 	height: 30rem;
-	border: 1px solid red;
 }
 
 #contact div {
@@ -190,9 +192,6 @@ code {
 }
 
 footer {
-	background-color: #000;
-	height: 5rem;
-}
-footer small {
-	color: white;
+	height: 3rem;
+	text-align: center;
 }
