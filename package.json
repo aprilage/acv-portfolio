@@ -1,0 +1,11 @@
+{
+  "name": "acv-portfolio",
+  "version": "0.1.0-2026.07.10.1200",
+  "private": true,
+  "description": "April Vanderslice portfolio site",
+  "devDependencies": {
+    "@mayjournal/fitness": "0.1.0-2026.7.7.850",
+    "@mayjournal/fitness-checks": "^0.1.0-2026.7.7.850",
+    "@mayjournal/fitness-shared": "0.1.0-2026.7.7.850"
+  }
+}
