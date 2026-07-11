@@ -14,3 +14,5 @@ relatedConfigurations: ['package.json']
   the word Vanderslice.
 - Add a project `prettier.config.cjs` that re-exports the shared Prettier
   config.
+- Add a local `no-em-dash` fitness check that fails on em dashes in shipped
+  HTML and CSS files.

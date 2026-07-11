@@ -25,5 +25,6 @@ export default {
     'mermaid-diagram-prose',
     'mermaid-legend',
     'mermaid-level-bleed',
+    './checks/no-em-dash.mjs',
   ],
 };
