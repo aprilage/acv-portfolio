@@ -1,0 +1,5 @@
+{
+  "import": ["./node_modules/@mayjournal/fitness-shared/config/cspell.json"],
+  "version": "0.2",
+  "words": ["Vanderslice", "cspell", "githooks", "hookspath"]
+}

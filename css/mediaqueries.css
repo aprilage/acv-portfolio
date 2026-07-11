@@ -1,45 +1,43 @@
-
 @media (min-width: 768px) {
-	body {
-	 width: 80%;
-	}
-	h2 {
-		text-transform: uppercase;
-		font-size: 4rem;
-		font-weight: 800;
-		padding: 1.5rem 0;
-		margin: 5rem 0 2rem 0;
-		border-bottom: 2px solid black;
-	}
-    #projects-container {
-		gap: 2rem;
-	}
-	.project-item {
-		flex-basis: 24rem;
-	}
-    #profile {
-        margin-bottom: 4rem;
-		flex-direction: row;
-		justify-content: space-between;
-		
-    }
+  body {
+    width: 80%;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 1.5rem 0;
+    margin: 5rem 0 2rem 0;
+    border-bottom: 2px solid black;
+  }
+  #projects-container {
+    gap: 2rem;
+  }
+  .project-item {
+    flex-basis: 24rem;
+  }
+  #profile {
+    margin-bottom: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-	#profile-image {
-		min-width: 15rem;
-        margin-right: 1.5rem;
-	}
-	section>p {
-		font-size: 1.5rem;
-	}
-	#to-top button {
-		padding: 1rem;
-		margin: 2rem;
-		position: sticky;
-		align-content: center;
-	}
-	
-	#to-top a {
-		font-weight: 800;
-		text-transform: capitalize;
-	}
+  #profile-image {
+    min-width: 15rem;
+    margin-right: 1.5rem;
+  }
+  section > p {
+    font-size: 1.5rem;
+  }
+  #to-top button {
+    padding: 1rem;
+    margin: 2rem;
+    position: sticky;
+    align-content: center;
+  }
+
+  #to-top a {
+    font-weight: 800;
+    text-transform: capitalize;
+  }
 }
