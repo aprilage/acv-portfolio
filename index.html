@@ -15,188 +15,363 @@
 
       gtag('config', 'G-NCM5L9T8BV');
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
     <title>April Vanderslice</title>
   </head>
   <body id="top">
-    <header>
-      <nav>
-        <div id="brand">
-          <h1><a href="#top">APRIL</a></h1>
-        </div>
-        <div id="page-nav">
+    <div class="page">
+      <!-- Nav -->
+      <nav class="nav">
+        <a class="nav-brand" href="#top">AV</a>
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a class="nav-contact" href="#contact">Contact</a>
         </div>
       </nav>
-    </header>
-    <main>
-      <section id="profile">
-        <h2>About</h2>
-        <div id="profile-image">
-          <img src="images/profile-photo.jpeg" alt="April vanderslice from the shoulders up" />
-        </div>
-        <p>
-          Web developer based in Plano, Texas. I have experience in backend technologies, but my
-          specialty is in front end languages.
+
+      <!-- Hero -->
+      <header class="hero">
+        <p class="eyebrow">FULL-STACK SOFTWARE ENGINEER &middot; FRISCO, TEXAS</p>
+        <h1 class="hero-name">April<br />Vanderslice</h1>
+        <p class="hero-intro">
+          Full-stack software engineer with experience across JavaScript, REST APIs, and AWS cloud
+          services. Currently building an independent, AI-integrated iOS app. Based in Frisco,
+          Texas.
         </p>
-      </section>
-      <section id="edu-skills">
-        <h2>Education &amp; Skills</h2>
-        <div id="school" class="skills-subsection">
-          <h3>College</h3>
-          <h4>Bachelor of Science in Web Design and Development</h4>
-          <p>Full Sail University</p>
-          <p>2020 - 2022</p>
+      </header>
+
+      <!-- Experience -->
+      <section id="experience" class="experience">
+        <div class="section-head section-head--major">
+          <h2 class="section-label">EXPERIENCE</h2>
+          <span class="section-meta">2022 &mdash; PRESENT</span>
         </div>
-        <div class="skills-subsection">
-          <h3>Skills</h3>
-          <h4>Front End</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>REACT</li>
-          </ul>
-          <h4>Back End</h4>
-          <ul>
-            <li>Node</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-          </ul>
+
+        <article class="job">
+          <div class="job-when">
+            <div class="job-dates">Feb 2026 &mdash; Present</div>
+            <div class="job-place">Frisco, TX</div>
+          </div>
+          <div class="job-body">
+            <h3 class="job-role">Independent iOS Developer &amp; Software Engineer</h3>
+            <div class="job-company">Self-Employed</div>
+            <p class="job-desc">Building an AI-integrated grocery-spending tracker end to end.</p>
+            <ul class="job-points">
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Designing a SwiftUI app that parses receipts (PDF or photo) with PDFKit text
+                  extraction and AI-based parsing to identify item names, prices, and
+                  quantities.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Built a data-visualization layer that surfaces category-level spending patterns
+                  so users can spot high-cost areas and make informed budget decisions.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Own the full product lifecycle, architecture, UI/UX, and iteration, deepening
+                  SwiftUI, on-device document processing, and applied AI/LLM integration.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-when">
+            <div class="job-dates">May 2025 &mdash; Feb 2026</div>
+            <div class="job-place">Dish account &middot; Contract</div>
+          </div>
+          <div class="job-body">
+            <h3 class="job-role">Software Engineer</h3>
+            <div class="job-company">Tech Mahindra</div>
+            <p class="job-desc">Event-driven architecture across production AWS systems.</p>
+            <ul class="job-points">
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Designed and built event-driven architectures on AWS with EventBridge &mdash;
+                  configuring buses, rules, targets, and schemas.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Integrated Lambda, Step Functions, SQS, SNS, and DynamoDB to meet architecture
+                  best practices and improve reliability.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Delivered dead-letter queue, retry, and error-handling improvements that
+                  increased the reliability of event-driven services.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Coordinated across engineering teams to support active releases with minimal
+                  downtime.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job job--gap">
+          <div class="job-when">
+            <div class="job-dates">Jan 2024 &mdash; May 2025</div>
+          </div>
+          <div class="job-body">
+            <h3 class="job-role">Parental Leave</h3>
+            <p class="job-desc">Took leave following the birth of my child.</p>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-when">
+            <div class="job-dates">Sept 2022 &mdash; Jan 2024</div>
+            <div class="job-place">Plano, TX</div>
+          </div>
+          <div class="job-body">
+            <h3 class="job-role">Software Engineer</h3>
+            <div class="job-company">Dish Network</div>
+            <p class="job-desc">
+              Converted from contractor to full-time on demonstrated domain expertise.
+            </p>
+            <ul class="job-points">
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Recognized for mobile device management domain expertise and hired
+                  full-time.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Identified and resolved production issues through proactive monitoring, improving
+                  system stability.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Partnered with the architecture team to bridge system-design intent and business
+                  requirements.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-when">
+            <div class="job-dates">May 2022 &mdash; Sept 2022</div>
+            <div class="job-place">Dish account &middot; Contract</div>
+          </div>
+          <div class="job-body">
+            <h3 class="job-role">Software Engineer</h3>
+            <div class="job-company">Tech Mahindra</div>
+            <p class="job-desc">College-hire cohort supporting Dish's MVNO expansion.</p>
+            <ul class="job-points">
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Gained hands-on Agile and full SDLC experience as part of a college-hire
+                  cohort.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Configured Google Cloud Platform, Apigee, and serverless Lambda functions to
+                  support MVNO product features.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Collaborated with solution architects to understand end-to-end systems and inform
+                  feature development.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Education + Skills -->
+      <section class="edu-skills">
+        <div class="edu">
+          <h2 class="section-label section-label--muted">EDUCATION</h2>
+          <h3 class="edu-degree">B.S. Web Design &amp; Development</h3>
+          <p class="edu-detail">
+            Full Sail University &middot; 2020&ndash;2022 &middot; Salutatorian, 3.9 GPA
+          </p>
+        </div>
+        <div class="skills">
+          <h2 class="section-label section-label--muted">SKILLS</h2>
+          <div class="skills-cols">
+            <div class="skills-col">
+              <div class="skills-sublabel">LANGUAGES &amp; UI</div>
+              <div class="skills-list">Node.js<br />React<br />HTML / CSS<br />SwiftUI<br />C#</div>
+            </div>
+            <div class="skills-col">
+              <div class="skills-sublabel">CLOUD &amp; BACKEND</div>
+              <div class="skills-list">
+                AWS<br />Express<br />PostgreSQL<br />REST APIs<br />Event-Driven Architecture
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div id="projects-container">
-          <article class="project-item">
-            <div class="project-image">
-              <img src="images/totalist2.gif" alt="list view of totalist" />
-            </div>
-            <div>
-              <h4 class="project-title">Totalist v2</h4>
-              <p class="project-text">
-                In this second version of List Total (now known as Totalist), I learned how to build
-                my own API, create the database, run the migrations, seed the data, and use JSON Web
-                Tokens for login validation.
-              </p>
-              <a href="https://github.com/aprilvanderslice/Totalist">view code</a>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image">
-              <img src="images/quizzes.png" alt="quizzes login page" />
-            </div>
-            <div>
-              <h4 class="project-title">Quizzes</h4>
-              <p class="project-text">
-                A website to take quizzes using GitHub authentication to login. Also features server
-                side rendering using Twig templates attached to React for the front end. The focus
-                was building the back end and github authentication, so not much styling going on
-                here.
-              </p>
-              <a href="https://github.com/aprilvanderslice/quizzes">view code</a>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image">
-              <img src="images/home-library.gif" alt="landing page of home library" />
-            </div>
-            <div>
-              <h4 class="project-title">Home Library</h4>
-              <p class="project-text">
-                Home Library is a way to catalog your books. The search page is connected to the
-                Open Library API. The useContext and useReducer React Hooks are used to manipulate
-                and display the user's book list.
-              </p>
-              <a href="https://github.com/aprilvanderslice/home-library">view code</a>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image">
-              <img src="images/dashboard.gif" alt="chart view of the dashboard" />
-            </div>
-            <div>
-              <h4 class="project-title">User Dashboard</h4>
-              <p class="project-text">
-                This is a simple React app using React Router featuring a user dashboard. Here I
-                played around with using Recharts to add graphics to the page. This project also
-                includes an API call to randomuser.me and displays user data under the Settings tab
-                of the site.
-              </p>
-              <a href="https://github.com/aprilvanderslice/dashboard">view code</a>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image">
-              <img src="images/totalistv1.gif" alt="main page of Totalist v1" />
-            </div>
-            <div>
-              <h4 class="project-title">Totalist v1</h4>
-              <p class="project-text">
-                The first version of an idea I had for an app that totals everything on your
-                shopping list as you add items. It's built using HTML, Bootstrap, and Javascript.
-                This was my first experience with the benefits and limitations of Bootstrap.
-              </p>
-              <a href="https://github.com/aprilvanderslice/Totalist_v1">view code</a>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-image">
-              <img src="images/babyland.gif" alt="static view of website homepage" />
+
+      <!-- Personal & Course Projects -->
+      <section id="projects" class="projects">
+        <div class="section-head">
+          <h2 class="section-label section-label--muted section-label--sm">
+            PERSONAL &amp; COURSE PROJECTS
+          </h2>
+          <span class="section-meta">06</span>
+        </div>
+        <div class="projects-grid">
+          <article class="project">
+            <div class="project-thumb">
+              <img src="images/totalist2.gif" alt="Totalist v2" />
             </div>
             <div class="project-info">
-              <h4 class="project-title">Babyland Recreation</h4>
-              <p class="project-text">
-                Using HTML and CSS I recreated
-                <a href="https://www.templatemonster.com/website-templates/52818.html"
-                  >this website template</a
-                >. The focus of this project was to learn how floats work by using them exclusively
-                to build the layout. The secondary focus was to learn how to use pseudo-classes
-                (like <code>:nth-of-type</code>) to select elements in the stylesheet instead of
-                adding clases and id's to every element (which can get messy and isn't necessary
-                anyway).
+              <h3 class="project-title">Totalist v2</h3>
+              <p class="project-short">
+                Full-stack rebuild &mdash; custom API, PostgreSQL, JWT auth.
               </p>
-              <a href="https://github.com/aprilvanderslice/babyland">view code</a>
+              <a
+                class="project-link"
+                href="https://github.com/aprilvanderslice/Totalist"
+                target="_blank"
+                rel="noopener"
+                >VIEW CODE &rarr;</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-thumb">
+              <img src="images/quizzes.png" alt="Quizzes" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Quizzes</h3>
+              <p class="project-short">GitHub OAuth login with Twig SSR + React front end.</p>
+              <a
+                class="project-link"
+                href="https://github.com/aprilvanderslice/quizzes"
+                target="_blank"
+                rel="noopener"
+                >VIEW CODE &rarr;</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-thumb">
+              <img src="images/home-library.gif" alt="Home Library" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Home Library</h3>
+              <p class="project-short">Book catalog using the Open Library API + Context.</p>
+              <a
+                class="project-link"
+                href="https://github.com/aprilvanderslice/home-library"
+                target="_blank"
+                rel="noopener"
+                >VIEW CODE &rarr;</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-thumb">
+              <img src="images/dashboard.gif" alt="User Dashboard" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">User Dashboard</h3>
+              <p class="project-short">React Router dashboard with Recharts + live API data.</p>
+              <a
+                class="project-link"
+                href="https://github.com/aprilvanderslice/dashboard"
+                target="_blank"
+                rel="noopener"
+                >VIEW CODE &rarr;</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-thumb">
+              <img src="images/totalistv1.gif" alt="Totalist v1" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Totalist v1</h3>
+              <p class="project-short">First version &mdash; HTML, Bootstrap, and JavaScript.</p>
+              <a
+                class="project-link"
+                href="https://github.com/aprilvanderslice/Totalist_v1"
+                target="_blank"
+                rel="noopener"
+                >VIEW CODE &rarr;</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-thumb">
+              <img src="images/babyland.gif" alt="Babyland Recreation" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Babyland Recreation</h3>
+              <p class="project-short">Template rebuild using floats and pseudo-classes.</p>
+              <a
+                class="project-link"
+                href="https://github.com/aprilvanderslice/babyland"
+                target="_blank"
+                rel="noopener"
+                >VIEW CODE &rarr;</a
+              >
             </div>
           </article>
         </div>
       </section>
-      <section id="contact">
-        <h2>contact</h2>
-        <div>
-          <address>
-            <a href="tel:+18014731747">(801) 473-1747</a><br />
-            <a href="mailto:aprilvanderslice@gmail.com"> aprilvanderslice@gmail.com </a>
-          </address>
-          <ul>
-            <li>
-              <a href="https://github.com/aprilvanderslice">
-                <i class="bi bi-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/aprilvanderslice/">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/aprilage/"><i class="bi bi-instagram"></i></a>
-            </li>
-          </ul>
+
+      <!-- Contact -->
+      <footer id="contact" class="contact">
+        <img class="contact-avatar" src="images/profile-photo.jpeg" alt="April Vanderslice" />
+        <div class="contact-label">CONTACT</div>
+        <a class="contact-email" href="mailto:aprilvanderslice@gmail.com"
+          >aprilvanderslice@gmail.com</a
+        >
+        <div class="contact-footer">
+          <div class="contact-social">
+            <a href="https://github.com/aprilvanderslice" target="_blank" rel="noopener">GITHUB</a>
+            <a href="https://www.linkedin.com/in/aprilvanderslice/" target="_blank" rel="noopener"
+              >LINKEDIN</a
+            >
+            <a href="https://www.instagram.com/aprilage/" target="_blank" rel="noopener"
+              >INSTAGRAM</a
+            >
+          </div>
+          <a class="contact-phone" href="tel:+18014731747">(801) 473-1747</a>
         </div>
-      </section>
-    </main>
-    <nav id="bottom-nav">
-      <a href="#top"><i class="bi bi-arrow-up"></i> Back to top</a>
-    </nav>
-    <footer>
-      <small>April Vanderslice 2022</small>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

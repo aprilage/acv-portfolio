@@ -1,43 +1,58 @@
-@media (min-width: 768px) {
-  body {
-    width: 80%;
+/* Responsive behavior =======================
+   The prototype is fixed at 1080px; these breakpoints add the mobile layout
+   the handoff README recommends: smaller inset, single-column grids, and a
+   fluid hero. */
+
+/* Fluid hero scaling below the fixed content width. */
+@media (max-width: 1080px) {
+  .hero-name {
+    font-size: clamp(52px, 12vw, 108px);
   }
-  h2 {
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 1.5rem 0;
-    margin: 5rem 0 2rem 0;
-    border-bottom: 2px solid black;
-  }
-  #projects-container {
-    gap: 2rem;
-  }
-  .project-item {
-    flex-basis: 24rem;
-  }
-  #profile {
-    margin-bottom: 4rem;
-    flex-direction: row;
-    justify-content: space-between;
+}
+
+/* Tablet and below: relax the horizontal inset. */
+@media (max-width: 820px) {
+  :root {
+    --inset: 40px;
   }
 
-  #profile-image {
-    min-width: 15rem;
-    margin-right: 1.5rem;
-  }
-  section > p {
-    font-size: 1.5rem;
-  }
-  #to-top button {
-    padding: 1rem;
-    margin: 2rem;
-    position: sticky;
-    align-content: center;
+  .edu-skills {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  #to-top a {
-    font-weight: 800;
-    text-transform: capitalize;
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 0 44px;
+  }
+}
+
+/* Phones: collapse the experience timeline and stack the contact footer. */
+@media (max-width: 600px) {
+  :root {
+    --inset: 24px;
+  }
+
+  .job {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .job-when {
+    padding-top: 0;
+  }
+
+  .skills-cols {
+    gap: 40px;
+  }
+
+  .contact-email {
+    font-size: clamp(30px, 8vw, 52px);
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 }
