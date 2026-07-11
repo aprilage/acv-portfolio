@@ -16,6 +16,8 @@ relatedConfigurations: ['package.json']
   experience bullet markers so shipped files stay free of literal em dashes.
 - Update the current role's job place to Frisco, TX so the experience entry
   matches the hero eyebrow and intro; historical roles keep their place values.
+- Fix the contact GitHub and Instagram profile links to the correct aprilage
+  and av.slice handles.
 
 ### 2026.07.10.1200
 

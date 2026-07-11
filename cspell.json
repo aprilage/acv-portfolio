@@ -2,6 +2,7 @@
   "import": ["./node_modules/@mayjournal/fitness-shared/config/cspell.json"],
   "version": "0.2",
   "words": [
+    "aprilage",
     "Archivo",
     "Babyland",
     "cspell",
