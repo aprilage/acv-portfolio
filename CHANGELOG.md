@@ -14,6 +14,8 @@ relatedConfigurations: ['package.json']
   breakpoints for the layout the prototype left fixed at 1080px.
 - Author em dashes as `&mdash;` entities and use small accent circles for the
   experience bullet markers so shipped files stay free of literal em dashes.
+- Update the current role's job place to Frisco, TX so the experience entry
+  matches the hero eyebrow and intro; historical roles keep their place values.
 
 ### 2026.07.10.1200
 
