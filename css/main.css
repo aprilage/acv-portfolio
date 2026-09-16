@@ -55,11 +55,13 @@ h2,
 h3,
 p,
 ul,
+ol,
 figure {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   padding: 0;
   list-style: none;
 }
@@ -178,6 +180,197 @@ ul {
   color: var(--body);
   margin-top: 44px;
   max-width: 30em;
+}
+
+/* Shipped ================================= */
+.shipped {
+  padding: 70px var(--inset) 80px;
+  background: var(--dark);
+  color: var(--on-dark);
+}
+
+.section-head--shipped {
+  border-bottom: 2px solid rgba(247, 244, 238, 0.25);
+  padding-bottom: 18px;
+  margin-bottom: 48px;
+}
+
+.shipped-section-label {
+  color: var(--on-dark-accent);
+}
+
+/* The screenshot column spans the title block and the two stacked writeups
+   beside it; wider writeups drop below with .shipped-block--wide. */
+.shipped-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 48px 56px;
+  align-items: start;
+}
+
+.shipped-intro,
+.shipped-block {
+  grid-column: 1;
+}
+
+.shipped-name {
+  font-size: 64px;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  font-weight: 800;
+}
+
+.shipped-lede {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--on-dark-muted);
+  margin-top: 26px;
+  max-width: 26em;
+}
+
+.shipped-cta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 34px;
+}
+
+/* Apple's badge ships at 120x40 and may not be recolored or rescaled. */
+.shipped-badge {
+  display: block;
+  line-height: 0;
+}
+
+.shipped-badge img {
+  width: 120px;
+  height: 40px;
+}
+
+.shipped-badge:hover {
+  opacity: 0.8;
+}
+
+.shipped-site {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--on-dark-accent);
+  border-bottom: 1px solid rgba(224, 145, 111, 0.5);
+}
+
+.shipped-site:hover {
+  color: var(--on-dark);
+}
+
+.shipped-shots {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.shipped-shot {
+  width: 100%;
+  height: 290px;
+  min-width: 0;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 16px;
+}
+
+.shipped-shot--primary {
+  height: 600px;
+  border-radius: 24px;
+}
+
+.shipped-shots-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 14px;
+}
+
+.shipped-tech {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.shipped-block--wide {
+  grid-column: 1 / -1;
+}
+
+.shipped-kicker {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--on-dark-accent);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(247, 244, 238, 0.15);
+  margin-bottom: 16px;
+}
+
+.shipped-copy {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-dark-muted);
+  max-width: 52em;
+}
+
+/* The prototype emphasizes these phrases with weight and color, not italics. */
+.shipped-copy em {
+  font-style: normal;
+  color: var(--on-dark);
+}
+
+.shipped-copy--payoff {
+  margin-top: 18px;
+}
+
+.shipped-points,
+.shipped-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 52em;
+}
+
+.shipped-points {
+  margin-top: 16px;
+}
+
+.shipped-points li,
+.shipped-list li {
+  display: grid;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--on-dark-muted);
+}
+
+.shipped-points li {
+  grid-template-columns: 26px 1fr;
+}
+
+.shipped-list li {
+  grid-template-columns: 20px 1fr;
+}
+
+.shipped-points strong,
+.shipped-list strong {
+  font-weight: 600;
+  color: var(--on-dark);
+}
+
+.shipped-ordinal {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--on-dark-accent);
+}
+
+.shipped-list .dot {
+  background: var(--on-dark-accent);
 }
 
 /* Experience =============================== */

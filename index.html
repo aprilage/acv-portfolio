@@ -31,6 +31,7 @@
       <nav class="nav">
         <a class="nav-brand" href="#top">AV</a>
         <div class="nav-links">
+          <a href="#shipped">Shipped</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a class="nav-contact" href="#contact">Contact</a>
@@ -42,11 +43,174 @@
         <p class="eyebrow">FULL-STACK SOFTWARE ENGINEER &middot; FRISCO, TEXAS</p>
         <h1 class="hero-name">April<br />Vanderslice</h1>
         <p class="hero-intro">
-          Full-stack software engineer with experience across JavaScript, REST APIs, and AWS cloud
-          services. Currently building an independent, AI-integrated iOS app. Based in Frisco,
-          Texas.
+          Full-stack software engineer with production experience across JavaScript, REST APIs, and
+          AWS cloud services. Shipped List Total, an independent iOS app, to the App Store. Based in
+          Frisco, Texas.
         </p>
       </header>
+
+      <!-- Shipped -->
+      <section id="shipped" class="shipped">
+        <div class="section-head section-head--shipped">
+          <h2 class="section-label shipped-section-label">SHIPPED</h2>
+          <span class="section-meta">iOS &middot; APP STORE &middot; 2026 &middot; $2.99</span>
+        </div>
+
+        <div class="shipped-grid">
+          <div class="shipped-intro">
+            <h3 class="shipped-name">List Total</h3>
+            <p class="shipped-lede">
+              A running total for the lists you already keep. Add a price and quantity to any Apple
+              Reminders item and List Total does the math as you shop. No account, no server, and
+              nothing to migrate.
+            </p>
+            <div class="shipped-cta">
+              <a
+                class="shipped-badge"
+                href="https://apps.apple.com/us/app/list-total/id6781814931?itscg=30200&amp;itsct=apps_box_badge&amp;mttnsubad=6781814931"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/app-store-badge.svg"
+                  alt="Download List Total on the App Store"
+                  width="120"
+                  height="40"
+                />
+              </a>
+              <a class="shipped-site" href="https://listtotal.app" target="_blank" rel="noopener"
+                >LISTTOTAL.APP &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="shipped-shots">
+            <img
+              class="shipped-shot shipped-shot--primary"
+              src="images/listtotal-detail.png"
+              alt="A List Total grocery list with a running total of $233.00"
+            />
+            <div class="shipped-shots-pair">
+              <img
+                class="shipped-shot"
+                src="images/listtotal-lists.png"
+                alt="The List Total home screen with a total next to each Reminders list"
+              />
+              <img
+                class="shipped-shot"
+                src="images/listtotal-party.png"
+                alt="A party planning list in List Total totaling $547.00"
+              />
+            </div>
+            <div class="shipped-tech">
+              SWIFTUI &middot; EVENTKIT / REMINDERS &middot; ICLOUD SYNC &middot; IOS 26 &middot; NO
+              BACKEND
+            </div>
+          </div>
+
+          <div class="shipped-block">
+            <div class="shipped-kicker">THE PROBLEM</div>
+            <p class="shipped-copy">
+              You find out what a shopping trip costs at the register, which is the one moment you
+              can no longer do anything about it. Every other app that attempts to solve this asks
+              you to abandon the list you already keep in Reminders and re-enter it somewhere else
+              behind a sign-up.
+            </p>
+          </div>
+
+          <div class="shipped-block">
+            <div class="shipped-kicker">ARCHITECTURE</div>
+            <p class="shipped-copy">
+              SwiftUI throughout, with EventKit as the only data layer. There is no database and no
+              backend: Apple Reminders <em>is</em> the store, so lists keep syncing through the
+              user's own iCloud account exactly as they did before installing the app. Reminders has
+              no price or quantity field, so cost and count are encoded into the item's existing
+              text and parsed back out on read, then totals and remaining-to-buy are derived values
+              computed in the view model rather than stored state. Shipped for iOS 26 with zero data
+              collection.
+            </p>
+          </div>
+
+          <div class="shipped-block shipped-block--wide">
+            <div class="shipped-kicker">THE HARD PART: STRUCTURED DATA IN A STORE I DON'T OWN</div>
+            <p class="shipped-copy">
+              The product promise: <em>keep using Reminders.</em> This is also the hardest
+              engineering constraint in the app. I need typed numbers per item, and Reminders gives
+              me strings. I can't add a column, I can't migrate anyone, and the user can edit the
+              same list in Apple's app, on a Mac, or from Siri while my app is open. Three things
+              followed from that:
+            </p>
+            <ol class="shipped-points">
+              <li>
+                <span class="shipped-ordinal">01</span
+                ><span
+                  ><strong>The encoding has to be legible to humans, not just to me.</strong>
+                  Whatever I write into a reminder is text a user will see in Apple's own app
+                  forever. So the format reads as something a person would have typed, and an item
+                  that has never been touched by List Total is simply an item with no price. It is
+                  not an error state and not a migration prompt.</span
+                >
+              </li>
+              <li>
+                <span class="shipped-ordinal">02</span
+                ><span
+                  ><strong>Parsing is forgiving; writing is strict.</strong> The reader accepts the
+                  sloppy variants people actually type and ignores anything it can't understand,
+                  rather than throwing. Every write goes back out in one canonical form. Unparseable
+                  text is never destroyed. Worst case an item contributes nothing to the total,
+                  which is a visible, correctable outcome instead of silent data loss in someone's
+                  shopping list.</span
+                >
+              </li>
+              <li>
+                <span class="shipped-ordinal">03</span
+                ><span
+                  ><strong>Treat the store as the source of truth.</strong> Totals are computed from
+                  whatever EventKit currently reports and the app refreshes on external change
+                  rather than assuming it owns the list. That's what makes iCloud conflicts a
+                  non-event: I have no second copy that can disagree.</span
+                >
+              </li>
+            </ol>
+            <p class="shipped-copy shipped-copy--payoff">
+              The payoff is the thing I'd defend in review: the app has no onboarding, no account,
+              no sync layer, and no data of its own to lose.
+            </p>
+          </div>
+
+          <div class="shipped-block shipped-block--wide">
+            <div class="shipped-kicker">WHAT I'D DO DIFFERENTLY</div>
+            <ul class="shipped-list">
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Write the encode/decode round-trip tests before the UI. It's the one piece where
+                  a bug corrupts data a user actually cares about, and it's trivially testable in
+                  isolation. I built it alongside the interface instead, which meant I was verifying
+                  parsing by shopping.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Decide the permission story on day one. EventKit access is the entire app:
+                  without it there is nothing to show, so the denied and not-yet-asked states
+                  deserved to be designed screens from the start rather than something I handled
+                  once the happy path worked.</span
+                >
+              </li>
+              <li>
+                <span class="dot"></span
+                ><span
+                  >Ship the paid tier with a way to try it. $2.99 with no free path means the App
+                  Store page has to do all the convincing, and I have no data on how many people
+                  bounced because they couldn't see a total on their own list first.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- Experience -->
       <section id="experience" class="experience">
@@ -63,28 +227,32 @@
           <div class="job-body">
             <h3 class="job-role">Independent iOS Developer &amp; Software Engineer</h3>
             <div class="job-company">Self-Employed</div>
-            <p class="job-desc">Building an AI-integrated grocery-spending tracker end to end.</p>
+            <p class="job-desc">
+              Designed, built, and shipped List Total to the App Store, a running total for Apple
+              Reminders lists.
+            </p>
             <ul class="job-points">
               <li>
                 <span class="dot"></span
                 ><span
-                  >Designing a SwiftUI app that parses receipts (PDF or photo) with PDFKit text
-                  extraction and AI-based parsing to identify item names, prices, and
-                  quantities.</span
+                  >Shipped a SwiftUI app built entirely on EventKit: Apple Reminders is the data
+                  store, so lists sync through the user's own iCloud with no account, no backend,
+                  and zero data collection.</span
                 >
               </li>
               <li>
                 <span class="dot"></span
                 ><span
-                  >Built a data-visualization layer that surfaces category-level spending patterns
-                  so users can spot high-cost areas and make informed budget decisions.</span
+                  >Designed a human-legible encoding for price and quantity inside Reminders'
+                  existing text fields, with forgiving reads and canonical writes so external edits
+                  from Apple's app or Siri never corrupt a list.</span
                 >
               </li>
               <li>
                 <span class="dot"></span
                 ><span
-                  >Own the full product lifecycle, architecture, UI/UX, and iteration, deepening
-                  SwiftUI, on-device document processing, and applied AI/LLM integration.</span
+                  >Owned the full product lifecycle across SwiftUI, EventKit, and iOS 26:
+                  architecture, UI/UX, App Store release, and post-launch iteration.</span
                 >
               </li>
             </ul>
@@ -230,7 +398,9 @@
           <div class="skills-cols">
             <div class="skills-col">
               <div class="skills-sublabel">LANGUAGES &amp; UI</div>
-              <div class="skills-list">Node.js<br />React<br />HTML / CSS<br />SwiftUI<br />C#</div>
+              <div class="skills-list">
+                JavaScript<br />React<br />HTML / CSS<br />SwiftUI<br />C#
+              </div>
             </div>
             <div class="skills-col">
               <div class="skills-sublabel">CLOUD &amp; BACKEND</div>
@@ -245,9 +415,7 @@
       <!-- Personal & Course Projects -->
       <section id="projects" class="projects">
         <div class="section-head">
-          <h2 class="section-label section-label--muted section-label--sm">
-            PERSONAL &amp; COURSE PROJECTS
-          </h2>
+          <h2 class="section-label section-label--muted section-label--sm">EARLIER PROJECTS</h2>
           <span class="section-meta">06</span>
         </div>
         <div class="projects-grid">

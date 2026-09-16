@@ -1,0 +1,3 @@
+# Binary assets and Apple's vendored App Store badge SVG: Prettier has no
+# parser for these, so passing them in fails the check rather than formatting.
+images/

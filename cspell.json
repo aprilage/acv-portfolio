@@ -1,4 +1,5 @@
 {
+  "ignorePaths": ["images/**"],
   "import": ["./node_modules/@mayjournal/fitness-shared/config/cspell.json"],
   "version": "0.2",
   "words": [
@@ -6,14 +7,22 @@
     "Archivo",
     "Babyland",
     "cspell",
+    "EVENTKIT",
     "githooks",
     "hookspath",
+    "lede",
+    "LISTTOTAL",
+    "livetype",
     "Mahindra",
     "mediaqueries",
     "MVNO",
     "SDLC",
+    "Siri",
     "sublabel",
+    "SWIFTUI",
     "Totalist",
-    "Vanderslice"
+    "Unparseable",
+    "Vanderslice",
+    "writeups"
   ]
 }

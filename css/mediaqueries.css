@@ -8,6 +8,10 @@
   .hero-name {
     font-size: clamp(52px, 12vw, 108px);
   }
+
+  .shipped-name {
+    font-size: clamp(38px, 7vw, 64px);
+  }
 }
 
 /* Tablet and below: relax the horizontal inset. */
@@ -24,6 +28,34 @@
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 0 44px;
+  }
+
+  .shipped-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .shipped-shots {
+    grid-column: 1;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* Flatten the pair so all three screens sit in the same 3-up row. */
+  .shipped-shots-pair {
+    display: contents;
+  }
+
+  .shipped-shot,
+  .shipped-shot--primary {
+    height: auto;
+    aspect-ratio: 1 / 2;
+    border-radius: 16px;
+  }
+
+  .shipped-tech {
+    grid-column: 1 / -1;
   }
 }
 
